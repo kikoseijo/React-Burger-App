@@ -1,8 +1,8 @@
 import React from 'react';
-import Aux from '../../../hoc/Aux';
+import Aux from '../../../hoc/Aux/Aux';
 import Button from '../../UI/Button/Button';
 
-const orderSumary = (props) => {
+const orderSummary = (props) => {
     const ingredientsSumary = Object.keys(props.ingredients)
         .map(igKey => {
             return <li><span style={{ textTransform: 'capitalize' }}>{igKey}</span>: {props.ingredients[igKey]}</li>
@@ -22,4 +22,4 @@ const orderSumary = (props) => {
         </Aux>
 )};
 
-export default orderSumary;
+export default orderSummary;

@@ -90,6 +90,7 @@ class BurgerBuilder extends Component {
         <Aux>
             <Modal show={this.state.purchasing} modalClosed={this.closedHandler}>
               <OrderSumary
+                price={this.state.totalPrice}
                 purchaseContinued={this.purchaseContinueHandler}
                 purchaseCancelled={this.closedHandler}
                 ingredients={this.state.ingredients} />
